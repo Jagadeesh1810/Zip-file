@@ -1,0 +1,10 @@
+<div class="total">
+    <img src="assets/logo.png">
+    <div class="buttons-data">
+        <button *ngFor="let x of buttons" (click)="changePath(x.name)" >
+            <mat-icon>{{x.icon}}</mat-icon>{{x.name}}
+        </button>
+    </div>
+    
+
+</div>

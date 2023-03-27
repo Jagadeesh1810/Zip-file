@@ -1,0 +1,36 @@
+<div class="toal">
+    <div class="story">
+        <img *ngFor="let x of storyImages" [src]="x.medium" alt="">
+    </div>
+    <div class="body-part">
+        <div class="feed">
+            <div class="feeds" *ngFor="let x of feedData" >
+                <div class="feeder">
+                    <div class="header">
+                        <img [src]="x.image">
+                        <p>{{x.name}}</p>
+                    </div>
+                    <div class="feed-img">
+                        <img [src]="x.feed"  >
+                        <div class="options" >
+                            <mat-icon>favorite_border</mat-icon>
+                            <mat-icon> mode_comment</mat-icon>
+                            <mat-icon>send</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="suggestions">
+            Suggestions For you
+                <div class="follws" *ngFor="let x of follow" >
+                    <img [src]="x.image" alt="">
+                    <div class="det">
+                        <p>{{x.name}}</p>
+                        <button>Follow</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</div>

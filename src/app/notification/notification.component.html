@@ -1,0 +1,36 @@
+
+    <header>
+      <h1>Notifications</h1>
+      <button>Clear All</button>
+    </header>
+    <main>
+      <ul style="overflow:auto;height:530px" > 
+        <li *ngFor="let x of like" >
+          <div class="notification-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="notification-content">
+            <p><strong>{{x.name}}</strong> liked your photo.</p>
+            <p class="notification-time">{{x.hour}} hours ago</p>
+          </div>
+        </li>
+        <li *ngFor="let x of comment" >
+          <div class="notification-icon">
+            <i class="fas fa-comment"></i>
+          </div>
+          <div class="notification-content">
+            <p><strong>{{x.name}}</strong> commented on your photo.</p>
+            <p class="notification-time">{{x.hour}} hours ago</p>
+          </div>
+        </li>
+        <li *ngFor="let x of follow" >
+          <div class="notification-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="notification-content">
+            <p><strong>{{x.name}}</strong> started following you.</p>
+            <p class="notification-time">{{x.hour}} hours ago</p>
+          </div>
+        </li>
+      </ul>
+    </main>

@@ -1,0 +1,114 @@
+.toal{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.story{
+    width:97%;
+    height: 13%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.story img{
+    border-radius:50%;
+    border: 2px solid purple;
+}
+.body-part{
+    width: 97%;
+    height: 80%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.feed{
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    color:white;
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: center;
+//     flex-direction: column;
+}
+.feeds{
+    width: 100%;
+}
+.suggestions{
+    width: 18%;
+    height: 100%;
+    color:grey;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    gap:10px;
+}
+.header img{
+    border-radius:50%;
+}
+.feed-img{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-img img{
+    width: 60%;
+    height:100%;
+}
+
+
+.options{
+    margin:5px;
+    width: 61%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.follws{
+    display: flex;
+    color:white;
+}
+.follws img{
+    border-radius: 50%;
+}
+button{
+    border-radius: 20px;
+    background-color: rgb(78, 78, 206);
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }

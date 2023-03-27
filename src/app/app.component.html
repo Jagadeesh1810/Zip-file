@@ -1,0 +1,12 @@
+<div class="total-data" *ngIf="!signed" >
+  <app-signup (newItemEvent)="newItemEvent($event)" ></app-signup>
+</div>
+
+<div class="total-data"  *ngIf="signed">
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+</div>

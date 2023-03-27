@@ -1,0 +1,19 @@
+    <header>
+      <div >
+        <img class="profile-pic" [src]="profilePic">
+              </div>
+      <div class="profile-info">
+        <h1>{{name}}</h1>
+        <ul>
+          <li><span>Posts:</span> 100</li>
+          <li><span>Followers:</span> 1000</li>
+          <li><span>Following:</span> 500</li>
+        </ul>
+        <button>Edit Profile</button>
+      </div>
+    </header>
+    <main>
+      <div class="post">
+        <img *ngFor="let x of profile" [src]="x.img" alt="Post 1">
+      </div>
+    </main>
